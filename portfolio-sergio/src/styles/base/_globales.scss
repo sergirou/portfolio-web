@@ -1,0 +1,34 @@
+@use 'variables' as v;
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: v.$font_main;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+h1{
+  color: v.$secondary-blue
+}
+
+
+h2{
+  color: v.$secondary-blue
+}
+
+img { 
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+

@@ -1,0 +1,92 @@
+@use "../base/variables" as v;
+@use "../base/mixins";
+
+.header {
+  background: linear-gradient(
+    104.1deg,
+    #00296b -3.44%,
+    #003f88 45.17%,
+    #000000 104.07%,
+    #000000 104.08%
+  );
+  padding: 2rem;
+  .header-container-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    .navLink {
+      color: v.$white;
+      font-weight: v.$bold;
+      font-size: 1.5rem;
+      &:hover {
+        color: v.$secondary-yellow;
+        transition: all ease-in-out 1s;
+      }
+    }
+  }
+
+  .header-tel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-number {
+      color: v.$white;
+      font-size: 1.5rem;
+      font-weight: v.$bold;
+      &:hover {
+        color: v.$secondary-yellow;
+        transition: all ease-in-out 1s;
+      }
+    }
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    gap: 1rem;
+    .title-header-content {
+      max-width: calc(35rem);
+      font-size: 4.5rem;
+      line-height: 4rem;
+      color: v.$white;
+    }
+    .content-header {
+      max-width: calc(43rem);
+      margin-bottom: 5rem;
+      color: v.$white;
+      font-size: 1.9rem;
+      font-weight: v.$regular;
+    }
+    .button-yellow {
+      text-shadow: v.$primary-blue;
+      background-color: v.$secondary-yellow;
+      color: v.$white;
+      padding: 0.5rem;
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: v.$bold;
+      border-radius: 0.6rem;
+      width: 8.7rem;
+      &:hover {
+        color: v.$primary-blue;
+        transition:  all ease-in-out 1s;
+      }
+    }
+  }
+  .header-images {
+    display: flex;
+    .image-header-dev{
+      margin-left:  auto;
+      margin-top: auto;
+    }
+  }
+}

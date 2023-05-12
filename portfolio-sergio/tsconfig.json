@@ -1,0 +1,14 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["./src/pages/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@components/*": ["./src/components/*"],
+      "@public/*":["public/*"],
+      "@styles/*": ["./src/styles/*"],
+      "types": ["@astrojs/image/client"],
+    },
+  },
+}
